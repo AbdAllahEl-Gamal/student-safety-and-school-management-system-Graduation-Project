@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pua-school",
+  "private_key_id": "897974d11215c61d27239ef2bf4a1c0e964463e4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDZ0fjTeqjzaXPM\nFfjb932S0UcL8wJosmtypem4WPCao15esB81zfNSRxsfx67qRm8EmMe635vQOntm\nzcr0wByjoSs9ogijK2eRpjV3Sye/jRFNXSeQSaHuFwVmFWdSt0pC2deGQmBMPZr/\nO2zschF2DozYHJo9vz6yfQwZD45hagC89Bb+SHVXRCH9fu7Qnztv+p01ESTM17NH\nFuCYcWWYXpqAU+7I/gCf6dWzmBT5fLmYx/iI4Am5/kO+wieioSNsCisXjqxJZlpw\n7Yvr4YuXJBjNvZOKi+S1hu+QpJG38HQ/YLShEb6ESYxzyNJaKAVa36FwLuXsJH00\nnRt7A/EdAgMBAAECggEAQ1TjQGgZwsiVqYAfQcvCzvgPKLPxSjDhAvsjgL9JfNvE\nR6vUsfqcXRIq4cuFl9i256pcjzkg/qCdVb2Gn9qk37Xp2m70kY/Qv5arz1j1jAJM\n12fU24bPXfxSyGgUXN7Yv0p8k32ALAEdIQmbFYn7OM2tnv5UdYLhHCaIb1S+NAEQ\nlDjaDoZsvL/Sbj4/FYOyLYjrvc4rZDcjrR6XZIgj2AE2kPcph1mX334NV2Mwlz08\nvFKPpFzfiD49krhv5JEdlNndgOhhJJjbj/CqXvexDoBaDLRs6suMZw/onHNqqhOW\ncDMxxTKRxBZ6I0zazsqYXdTMaAOndUFvMpnCs9Vg9wKBgQD/LXO6OQMcLQ/+i1Y5\nEqGfc0M44GKvSzqxtmNaMlVIHqv3RHYqiVmusFAIxhBlpjXy5x9t7belYDbTMb7O\ntpfmEFr1tMoeTpHNvsbNpE/5KolnDyemMnUjjWzRztJPwki/5MAWyXECJdpw8Wfj\nkWwptu4sMDJ3m3JdfMAjBN8gjwKBgQDahbI8XYsCzbvsbM+8wJCkEL6HNIQV9KAl\nz20jejocHxX5PjuWbyd6xS/OY13YWeTZPM9EV0Eiy+dZfUlfPYRp6/oWxr6J9i4S\nc4ikV1NmNMH2TdQ2NFCdhrI6XKu1QbSpyT9FNcXp0i0xFTkh1zqz79l+8dPWAa4X\n6IcLLnlRkwKBgQDYb5HgGulTZblSOpbok6/4kYgr3s51RkbDYyLD5ztEj5dmhHAB\nxjwGGk/YET7pKOBLZdPXprCEmaYG3gOsS11tauPr0es5Z4Tt0OnIlJysh3LBsi38\nHoISpKrvDhB+TBjugjSXX0b1/mtYLrniYH8wppM/caXsozGOr/g7+67RawKBgAYl\nKlz+OHGMvZMpgDILrEWg3urIdEp1xacqjSQpRMcTrLeEo4JYf+C4+N4x9yqlZIUj\na6S9W2ySFWBz4INYJIgiBbdsQWF51dPZAee1OPgv1aCKkcQwdm/noM15W67OOTlp\nGmlk2Lr5mSG/OgsUlWcIALLMNCvZgj7T4DBVTz4XAoGBANBxfZXvxXeALH+9U/wq\n9HSmp08kosl9BDBSm+gD3rf8/Xhpw78pEwHBekyxPSOIR7RjX5xz6FhzhbgbmjJe\nFYs4I7/T/rqeVO9vECv+gvvO0ycdaRLkgySwhFjQ6pQpktJ2wswrvwJbbTfWmSKJ\nChj7JOan5AHHkwfxBFXNsKR6\n-----END PRIVATE KEY-----\n",
+  "client_email": "pi-628@pua-school.iam.gserviceaccount.com",
+  "client_id": "105533363439251745132",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pi-628%40pua-school.iam.gserviceaccount.com"
+}
