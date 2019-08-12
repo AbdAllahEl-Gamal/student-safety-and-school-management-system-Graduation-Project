@@ -7,7 +7,7 @@
 	@include('import/navbarTeacher')
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Take Attendance</B></h3></div>
+			<div class="panel-heading"><h3><b>Take Attendance</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -18,7 +18,7 @@
 									<div class="row">
 										<div class="col-xs-6">
 											<div class="form-group">
-											<B><label>Class</label></B><br>
+											<b><label>Class</label></b><br>
 											<select class="form-control" name="classs" required>
 											<option value="">None</option>
 											@foreach($classess as $key => $classValue)
@@ -27,7 +27,7 @@
 											</select>
 										</div>
 										<div class="form-group">
-											<B><label>Period</label></B><br>
+											<b><label>Period</label></b><br>
 											<select class="form-control" name="period" required>
 												<option value="">None</option>
 												<option value="1">1</option>
@@ -41,7 +41,7 @@
 											</select>
 										</div></div>
 										<div class="col-xs-6">
-											<br><br><button type="submit" class="btn btn-primary"><B>Search</B></button>
+											<br><br><button type="submit" class="btn btn-primary"><b>Search</b></button>
 										</div>
 									</div>
 								</form>

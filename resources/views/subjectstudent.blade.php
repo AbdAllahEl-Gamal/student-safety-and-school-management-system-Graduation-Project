@@ -15,7 +15,7 @@
 			<option value="English">English</option>
 			<option value="Math">Math</option>
 		</select>
-		<button type="submit" class="btn btn-primary"><B>Submit</B></button>
+		<button type="submit" class="btn btn-primary"><b>Submit</b></button>
 	</form>
 
 	</div>

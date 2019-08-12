@@ -9,7 +9,7 @@
     <div class="row">
      <div class="panel panel-info">
       <div class="panel-heading">
-        <h3 class="panel-title"><B>Access Bus Information</B></h3>
+        <h3 class="panel-title"><b>Access Bus Information</b></h3>
       </div>
       <div class="panel-body">
         <div class="row">
@@ -18,7 +18,7 @@
               <div class="col-md-12">	
                 <form action="{{url('accessBus')}}" method="post">
                  {{ csrf_field() }}
-                 <label>Bus ID:</label></B>
+                 <b><label>Bus ID:</label></b>
                  <select name="busid" class="form-control" required>
                   <option value="">None</option>
                   @for($i=0;$i<count($busIds);$i++)
@@ -29,7 +29,7 @@
                 <input type="hidden" name="busIds1[]" value="{{$busIds[$i]}}"></input>
                 @endfor
 
-                <button type="submit" class="btn btn-primary"><B>Search</B></button>
+                <button type="submit" class="btn btn-primary"><b>Search</b></button>
               </form>
             </div>
           </div>
@@ -45,7 +45,7 @@
     @if(isset($supervisorName))
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h3 class="panel-title"><B>Bus Information</B></h3>
+        <h3 class="panel-title"><b>Bus Information</b></h3>
       </div>
       <div class="panel-body">
         <div class="row">
@@ -80,7 +80,7 @@
     </div>
     <div class="panel panel-info">
       <div class="panel-heading">
-        <h3 class="panel-title"><B>Students</B></h3>
+        <h3 class="panel-title"><b>Students</b></h3>
       </div>
       <div class="panel-body">
         <div class="row">

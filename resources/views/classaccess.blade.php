@@ -7,11 +7,11 @@
 	@include('import/navbarAdmin')
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Access Classroom Information</B></h3></div> 
+			<div class="panel-heading"><h3><b>Access Classroom Information</b></h3></div> 
 			<div class="panel-body">
 				<form action="{{url('accessClass')}}" method="post">
 					{{ csrf_field() }}
-					<label>Class ID:</label></B>
+					<label>Class ID:</label></b>
 					<select class="form-control" name="classid" required>
 					   <option value="">None</option>
 					   @foreach($classIds as $key => $classValue)
@@ -19,38 +19,38 @@
 					   @endforeach
 					</select><br>
 					@foreach($classIds as $key => $classValue)
-					<input type="hidden" name="classIds1[]" value="{{$classValue['class']}}"></input>
+					<input type="hidden" name="classIds1[]" value="{{$classValue['class']}}">
 					@endforeach
 					
-					<button type="submit" class="btn btn-primary"><B>Search</B></button>
+					<button type="submit" class="btn btn-primary"><b>Search</b></button>
 				</form>
 			</div>
 		</div>
 		@if(isset($names))
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Students</B></h3></div> 
+			<div class="panel-heading"><h3><b>Students</b></h3></div> 
 			<div class="panel-body">
 				<div class="row">
 					<div class="col-lg-4">
-						<label><B><U>Name</U></B></label>
+						<label><b><U>Name</U></b></label>
 					</div>
 					<div class="col-lg-4">
-						<label><B><U>Class</U></B></label>
+						<label><b><U>Class</U></b></label>
 					</div>
 					<div class="col-lg-4">
-						<label><B><U>Parent phone number</U></B></label>
+						<label><b><U>Parent phone number</U></b></label>
 					</div>
 				</div>
 				<div class="row">
 					@for($i=0;$i<count($names);$i++)
 					<div class="col-lg-4">
-						<label><B>{{$names[$i]}}</B></label>
+						<label><b>{{$names[$i]}}</b></label>
 					</div>
 					<div class="col-lg-4">
-						<label><B>{{$classes[$i]}}</B></label>
+						<label><b>{{$classes[$i]}}</b></label>
 					</div>
 					<div class="col-lg-4">
-						<label><B>{{$parentNumbers[$i]}}</B></label>
+						<label><b>{{$parentNumbers[$i]}}</b></label>
 					</div>
 					@endfor
 				</div>

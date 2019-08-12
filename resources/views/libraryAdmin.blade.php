@@ -10,7 +10,7 @@
 		
 		@if((!isset($sheets))||($sheets=='No files found'))
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Library</B></h3></div>
+			<div class="panel-heading"><h3><b>Library</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -26,7 +26,7 @@
 
 									<div class="col-md-12">
 										<div class="form-group {{ $errors->has('class') ? 'has-error' : '' }}">
-											<B><label>class</label></B><br>
+											<b><label>class</label></b><br>
 											<select name="classess" class="form-control">
 												<option value="">None</option>
 												@foreach($classess as $key => $classValue)
@@ -35,7 +35,7 @@
 											</select>
 										</div>
 										<div class="form-group {{ $errors->has('subject') ? 'has-error' : '' }}">
-											<B><label>Subject</label></B><br>
+											<b><label>Subject</label></b><br>
 											<select name="subject" class="form-control">
 												<option value="">None</option>
 												@foreach($subjectss as $key => $subjectValue)
@@ -43,7 +43,7 @@
 												@endforeach
 											</select>
 										</div>
-										<button type="submit" class="btn btn-primary"><B>Submit</B></button>
+										<button type="submit" class="btn btn-primary"><b>Submit</b></button>
 									</div>
 								</form>
 							</div>
@@ -55,7 +55,7 @@
 		@endif
 		@if(isset($sheets)&& $sheets!='No files found')
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Files</B></h3></div> 
+			<div class="panel-heading"><h3><b>Files</b></h3></div> 
 			<div class="panel-body">
 				<div class="row">
 					<ul>

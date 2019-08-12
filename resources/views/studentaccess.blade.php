@@ -7,19 +7,19 @@
 	@include('import/navbarTeacher') <!-- mmkn a5zn el nav f session m3a login -->
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Access Student Information</B></h3></div> 
+			<div class="panel-heading"><h3><b>Access Student Information</b></h3></div> 
 			<div class="panel-body">
 				<form action="{{url('accessStudent')}}" method="post">
 					{{ csrf_field() }}
-					<B>Student ID:</B> <input type="text" name="studentid">
-					<button type="submit" class="btn btn-primary"><B>Search</B></button>
+					<b>Student ID:</b> <input type="text" name="studentid">
+					<button type="submit" class="btn btn-primary"><b>Search</b></button>
 				</form>
 			</div>
 		</div>
 		@if(isset($name))
 		<div class="panel panel-info">
 			<div class="panel-heading">
-				<h3 class="panel-title"><B>{{$name}}</B></h3>
+				<h3 class="panel-title"><b>{{$name}}</b></h3>
 			</div>
 			<div class="panel-body">
 				<div class="row">
@@ -57,7 +57,7 @@
 		</div>
 		<div class="panel panel-info">
 			<div class="panel-heading">
-				<h3 class="panel-title"><B>Timetable</B></h3>
+				<h3 class="panel-title"><b>Timetable</b></h3>
 			</div>
 			<div class="panel-body">
 				<div class="row">
@@ -72,7 +72,7 @@
 			</div>
 		</div>
 		<div class="panel panel-info">
-			<div class="panel-heading"><h3><B>Grades</B></h3></div> 
+			<div class="panel-heading"><h3><b>Grades</b></h3></div> 
 			<div class="panel-body">
 				<div class="row">
 					@if($subjects)
@@ -94,7 +94,7 @@
 			</div>
 		</div>
 		<div class="panel panel-info">
-			<div class="panel-heading"><h3><B>Attendance</B></h3></div> 
+			<div class="panel-heading"><h3><b>Attendance</b></h3></div> 
 			<div class="panel-body">
 				<div class="row">
 					@if($attendance)

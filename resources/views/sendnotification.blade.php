@@ -7,7 +7,7 @@
 	@include('import/navbarAdmin')
 	<div class="container">
 	<div  class="panel panel-default">
-	<div class="panel-heading"><h3><B>Send Notification</B></h3></div>
+	<div class="panel-heading"><h3><b>Send Notification</b></h3></div>
 	@if (count($errors)>0)
 	<ul>
 		@foreach($errors->all() as $error)
@@ -17,10 +17,10 @@
 	@endif
     
 	<ul class="nav nav-pills"  style="padding-left: 300px" >
-    <li class="active"><a data-toggle="pill" href="#singleDevice"><B>Single Device</B></a></li> 
-    <li><a data-toggle="pill" href="#multiDevice"><B>Multi Devices</B></a></li>
-    <li><a data-toggle="pill" href="#singleTopic"><B>Single Topic</B></a></li>
-    <li><a data-toggle="pill" href="#multiTopic"><B>Multi Topics</B></a></li>
+    <li class="active"><a data-toggle="pill" href="#singleDevice"><b>Single Device</b></a></li> 
+    <li><a data-toggle="pill" href="#multiDevice"><b>Multi Devices</b></a></li>
+    <li><a data-toggle="pill" href="#singleTopic"><b>Single Topic</b></a></li>
+    <li><a data-toggle="pill" href="#multiTopic"><b>Multi Topics</b></a></li>
     </ul>
 
 
@@ -45,7 +45,7 @@
 												<label for="comment">Message Body</label>
 												<textarea class="form-control" rows="5" name="msg_body"> </textarea>
 											</div>
-										<button type="submit" class="btn btn-primary"><B>Send Notification</B></button>
+										<button type="submit" class="btn btn-primary"><b>Send Notification</b></button>
 									</form>	
 								</div>
 							</div>
@@ -74,7 +74,7 @@
 											<label for="comment">Message Body</label>
 											<textarea class="form-control" rows="5" name="msg_body"> </textarea>
 										</div>
-										<button type="submit" class="btn btn-primary"><B>Send Notification</B></button>
+										<button type="submit" class="btn btn-primary"><b>Send Notification</b></button>
 									</form>	
 								</div>
 							</div>
@@ -104,7 +104,7 @@
 											<label for="comment">Message Body</label>
 											<textarea class="form-control" rows="5" name="msg_body"> </textarea>
 										</div>
-										<button type="submit" class="btn btn-primary"><B>Send Notification</B></button>
+										<button type="submit" class="btn btn-primary"><b>Send Notification</b></button>
 									</form>	
 								</div>
 							</div>
@@ -133,7 +133,7 @@
 											<label for="comment">Message Body</label>
 											<textarea class="form-control" rows="5" name="msg_body"> </textarea>
 										</div>
-										<button type="submit" class="btn btn-primary"><B>Send Notification</B></button>
+										<button type="submit" class="btn btn-primary"><b>Send Notification</b></button>
 									</form>	
 								</div>
 							</div>

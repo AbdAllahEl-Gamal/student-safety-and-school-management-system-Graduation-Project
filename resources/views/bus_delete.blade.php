@@ -14,15 +14,15 @@
 				<div class="panel-body">
 					<form action="{{url('busDelete1')}}" method="post" enctype="multipart/form-data">
 						{{ csrf_field() }}
-						<B>bus ID:</B> <input type="text" name="busid">
-						<button type="submit" class="btn btn-primary"><B>Search</B></button>
+						<b>bus ID:</b> <input type="text" name="busid">
+						<button type="submit" class="btn btn-primary"><b>Search</b></button>
 					</form>
 				</div>
 			</div>
 
 			@if(isset($drivername))
 			<div class="panel panel-default">
-				<div class="panel-heading"><h3><B>Bus Information</B></h3></div> 
+				<div class="panel-heading"><h3><b>Bus Information</b></h3></div> 
 				<div class="panel-body">
 					<div class="py-5">
 						<div class="container">
@@ -30,20 +30,20 @@
 								<div class="col-md-11">
 									<form action="{{url('busDelete2')}}" method="post" enctype="multipart/form-data">
 										{{ csrf_field() }}
-										<label>Bus ID: </label></B>
+										<b><label>Bus ID: </label></b>
 										<input type="tect" name="busid2" value="{{$busid}}" class="form-control" readonly><br>
 
-										<label>Driver: </label></B>
+										<b><label>Driver: </label></b>
 										<input type="tect" name="driver" value="{{$drivername}}" class="form-control" readonly><br>
 
-										<label>Supervisor:</label></B>
+										<b><label>Supervisor:</label></b>
 										<input type="tect" name="supervisor" value="{{$supervisorname}}" class="form-control" readonly><br>
 
-										<label>Line:</label></B>
+										<b><label>Line:</label></b>
 										<input type="tect" name="line" value="{{$line}}" class="form-control" readonly><br>
 
-										<button type="submit" class="btn btn-primary"><B>Delete</B></button>
-										<button id="cancelBtn" class="btn btn-danger"><B>Cancel</B></button>
+										<button type="submit" class="btn btn-primary"><b>Delete</b></button>
+										<button id="cancelBtn" class="btn btn-danger"><b>Cancel</b></button>
 									</form>
 								</div>
 							</div>

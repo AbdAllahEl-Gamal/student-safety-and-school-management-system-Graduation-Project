@@ -10,7 +10,7 @@
 	
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Recovery Password</B></h3></div>
+			<div class="panel-heading"><h3><b>Recovery Password</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -26,13 +26,13 @@
 								<form action="{{ url('recoveryPassword') }}" method="post">
 									{{ csrf_field() }}
 									<div class="form-group">
-										<label>Enter New Password:</label></B>
+										<b><label>Enter New Password:</label></b>
 										<input type="password" class="form-control" name="password" required><br>
-										<label>Enter Confirm Password</label></B>
+										<b><label>Enter Confirm Password</label></b>
 										<input type="password" class="form-control" name="confirmPassword" required><br>
 										<input type="hidden" name="id" value="{{$id}}">
 										<input type="hidden" name="position" value="{{$position}}">
-										<button typt="submit"><B>Change</B></button>
+										<button typt="submit"><b>Change</b></button>
 									</div>
 								</form>
 							</div>

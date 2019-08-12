@@ -8,7 +8,7 @@
 	
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Student Password Update</B></h3></div>
+			<div class="panel-heading"><h3><b>Student Password Update</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -24,11 +24,11 @@
 								<form action="{{ url('updateStudentPass') }}" method="post">
 									{{ csrf_field() }}
 									<div class="form-group">
-										<label>Student ID</label></B>
+										<b><label>Student ID</label></b>
 										<input type="text" class="form-control" name="studentID"><br>
-										<label>New Password</label></B>
+										<b><label>New Password</label></b>
 										<input type="password" class="form-control" name="password"><br>
-										<button type="submit" class="btn btn-primary"><B>Update Password</B></button>
+										<button type="submit" class="btn btn-primary"><b>Update Password</b></button>
 									</div>
 								</form>
 							</div>

@@ -8,7 +8,7 @@
 	
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Answer Questions</B></h3></div>
+			<div class="panel-heading"><h3><b>Answer Questions</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -44,7 +44,7 @@
 							<div class="container">
 								<div class="col-md-11">
 									<div class="panel panel-primary">
-										<div class="panel-heading"><B>Comments</B></div>
+										<div class="panel-heading"><b>Comments</b></div>
 										<div class="panel-body">
 											@if(isset($post['comments']))
 											@foreach($post['comments'] as $comment)
@@ -85,7 +85,7 @@
 										<input type="hidden" name="postId" value="{{$key}}">
 										<input type="hidden" name="studentId" value="{{$post['studentId']}}">
 										<textarea type="text" name="comment" placeholder="Type your comment ..." wrap="hard" rows="1" cols="110" style="resize: none;height: auto"></textarea>
-										<button type="submit" class="btn btn-primary"><B>Add</B></button>
+										<button type="submit" class="btn btn-primary"><b>Add</b></button>
 									</form>
 								</div>
 							</div>

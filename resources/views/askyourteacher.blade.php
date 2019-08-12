@@ -32,7 +32,7 @@
 	<div class="container">
 		<div class="panel panel-info">
             <div class="panel-heading">
-              <h3 class="panel-title"><B>Ask Your Teacher</B></h3>
+              <h3 class="panel-title"><b>Ask Your Teacher</b></h3>
             </div>
             <div class="panel-body">
               <div class="row">
@@ -52,14 +52,14 @@
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group {{ $errors->has('question') ? 'has-error' : '' }}">
-												<B><label for="comment">Ask a Question:</label></B>
+												<b><label for="comment">Ask a Question:</label></b>
 												<textarea class="form-control" rows="5"  name="question" placeholder="Ask your question ..." style="height: auto;"></textarea>
 											</div>
 
 										</div>
 										<div class="col-md-6">
 											<div class="form-group {{ $errors->has('subject') ? 'has-error' : '' }}">
-												<B><label>Subject</label></B><br>
+												<b><label>Subject</label></b><br>
 												<select name="subject" id="subject" class="form-control">
 													<option value="">None</option>
 													@foreach($subjectss as $key => $subjectValue)
@@ -67,7 +67,7 @@
 													@endforeach
 												</select>
 											</div>
-											<button style="margin: 10%" type="submit" class="btn btn-primary"><B>Submit</B></button>
+											<button style="margin: 10%" type="submit" class="btn btn-primary"><b>Submit</b></button>
 										</div>
 									</div>
 
@@ -135,7 +135,7 @@
 										{{ csrf_field() }}
 										<input type="hidden" name="postId" value="{{$key}}">
 										<textarea type="text" name="comment" placeholder="Type your comment ..." wrap="hard" rows="1" cols="90" style="resize: none;height: auto"></textarea>
-										<button type="submit" class="btn btn-primary"><B>Add</B></button>
+										<button type="submit" class="btn btn-primary"><b>Add</b></button>
 									</form>
 								</div>
 					</div>

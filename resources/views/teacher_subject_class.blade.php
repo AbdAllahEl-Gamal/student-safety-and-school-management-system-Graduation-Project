@@ -10,7 +10,7 @@
 	
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Teacher Management</B></h3></div>
+			<div class="panel-heading"><h3><b>Teacher Management</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -19,11 +19,11 @@
 								<form action="{{ url('assignClassesToTeacher') }}" method="post">
 									{{ csrf_field() }}
 									<div class="form-group">
-									    <label>Teacher Id</label></B>
+									    <b><label>Teacher Id</label></b>
 										<input type="text" name="teacherId" class="form-control" placeholder="01xxxxxxxx"><br>
 									</div>
 									<div class="form-group">
-									    <label>Classes</label></B>
+									    <b><label>Classes</label></b>
 										<select name="classes[]" class="form-control" multiple required>
 											<option value="">None</option>
 											@foreach($classess as $key => $classValue)
@@ -32,7 +32,7 @@
 										</select><br>
 									</div>
 									<div class="form-group">
-									    <label>Subjects</label></B>
+									    <b><label>Subjects</label></b>
 										<select name="subject" class="form-control" multiple required>
 											<option value="">None</option>
 											@foreach($subjectss as $key2 => $subjectValue)
@@ -40,7 +40,7 @@
 											@endforeach
 										</select><br>
 									</div>
-									<button type="submit" class="btn btn-primary"><B>Submit</B></button>
+									<button type="submit" class="btn btn-primary"><b>Submit</b></button>
 								</form>
 							</div>
 						</div>

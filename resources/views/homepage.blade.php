@@ -59,14 +59,14 @@
        </div>
        <div class="checkbox">
          <label>
-           <input type="checkbox"> <B>Remember me</B>
+           <input type="checkbox"> <b>Remember me</b>
          </label>
        </div>
        <div class="form-footer">
-        <a href="{{ url('forgetPassword') }}"><B>Forgot your password?</B></a>
+        <a href="{{ url('forgetPassword') }}"><b>Forgot your password?</b></a>
       </div>
-      <button type="submit" class="btn btn-info btn-xs"><B>Sign in</B></button>
-      <button type="button" class="btn btn-default btn-xs" data-dismiss="modal"><B>Cancel</B></button>            
+      <button type="submit" class="btn btn-info btn-xs"><b>Sign in</b></button>
+      <button type="button" class="btn btn-default btn-xs" data-dismiss="modal"><b>Cancel</b></button>            
     </form>
   </div>
 </div>
@@ -100,14 +100,14 @@
 		 </div>
            <div class="checkbox">
              <label>
-               <input type="checkbox"> <B>Remember me</B>
+               <input type="checkbox"> <b>Remember me</b>
              </label>
            </div>
            <div class="form-footer">
-            <a href="{{ url('forgetPassword') }}"><B>Forgot your password?</B></a>
+            <a href="{{ url('forgetPassword') }}"><b>Forgot your password?</b></a>
           </div>
-          <button type="submit" class="btn btn-info btn-xs"><B>Sign in</B></button>
-          <button type="button" class="btn btn-default btn-xs" data-dismiss="modal"><B>Cancel</B></button>            
+          <button type="submit" class="btn btn-info btn-xs"><b>Sign in</b></button>
+          <button type="button" class="btn btn-default btn-xs" data-dismiss="modal"><b>Cancel</b></button>            
         </form>
     </div>
   </div>
@@ -142,14 +142,14 @@
        </div>
        <div class="checkbox">
          <label>
-           <input type="checkbox"> <B>Remember me</B>
+           <input type="checkbox"> <b>Remember me</b>
          </label>
        </div>
        <div class="form-footer">
-        <a href="{{ url('forgetPassword') }}"><B>Forgot your password?</B></a>
+        <a href="{{ url('forgetPassword') }}"><b>Forgot your password?</b></a>
       </div>
-      <button type="submit" class="btn btn-info btn-xs"><B>Sign in</B></button>
-      <button type="button" class="btn btn-default btn-xs" data-dismiss="modal"><B>Cancel</B></button>            
+      <button type="submit" class="btn btn-info btn-xs"><b>Sign in</b></button>
+      <button type="button" class="btn btn-default btn-xs" data-dismiss="modal"><b>Cancel</b></button>            
     </form>
   </div>
 </div>
@@ -161,13 +161,13 @@
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navbar-container">
     <ul class="nav navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#tm-section-1"><B>Home</B></a>
+        <a class="nav-link" href="#tm-section-1"><b>Home</b></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#tm-section-3"><B>About</B></a>
+        <a class="nav-link" href="#tm-section-3"><b>About</b></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#tm-section-4"><B>Contact</B></a>
+        <a class="nav-link" href="#tm-section-4"><b>Contact</b></a>
       </li>
       
     </ul>
@@ -264,7 +264,7 @@
           <textarea id="contact_message" name="contact_message" class="form-control" rows="6" placeholder="Message" required></textarea>
         </div>
 
-        <button type="submit" class="btn submit-btn"><B>Send It Now</B></button>
+        <button type="submit" class="btn submit-btn"><b>Send It Now</b></button>
       </div>
 
     </form>   
@@ -302,7 +302,7 @@
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 
-      <p class="text-xs-center tm-footer-text"><B>Copyright &copy; 2018 School Name</B></p>
+      <p class="text-xs-center tm-footer-text"><b>Copyright &copy; 2018 School Name</b></p>
 
     </div>
 

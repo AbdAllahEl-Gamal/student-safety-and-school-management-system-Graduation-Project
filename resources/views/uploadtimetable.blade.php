@@ -7,7 +7,7 @@
 	@include('import/navbarAdmin')
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Upload Timetable</B></h3></div>
+			<div class="panel-heading"><h3><b>Upload Timetable</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -23,7 +23,7 @@
 								<form action="{{ url('uploadTimetable') }} " method="post" enctype="multipart/form-data" files="true">
 									{{ csrf_field() }}
 									<div class="form-group {{ $errors->has('class') ? 'has-error' : '' }}">
-										<B><label>Class</label></B><br>
+										<b><label>Class</label></b><br>
 										<select class="form-control" name="class" required>
 											<option value="">None</option>
 											@foreach($classess as $key => $classValue)
@@ -32,10 +32,10 @@
 										</select>
 									</div>
 									<div class="form-group {{ $errors->has('timetableimage') ? 'has-error' : '' }}">
-										<B><label>Upload timetable</label></B><br>
+										<b><label>Upload timetable</label></b><br>
 										<input type="file" name="timetableimage" id="file">
 									</div>
-									<button type="submit" class="btn btn-primary"><B>Submit</B></button>
+									<button type="submit" class="btn btn-primary"><b>Submit</b></button>
 								</form>
 							</div>
 						</div>

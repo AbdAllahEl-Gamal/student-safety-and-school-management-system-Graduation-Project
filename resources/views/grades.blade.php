@@ -8,7 +8,7 @@
 	@include('import/navbarTeacher')
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Manage Grades</B></h3></div>
+			<div class="panel-heading"><h3><b>Manage Grades</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -17,7 +17,7 @@
 								<form method="post" action="{{ url('returnGrades') }}">
 									{{ csrf_field() }}
 									<div class="form-group">
-										<B><label>Class</label></B><br>
+										<b><label>Class</label></b><br>
 										<select class="form-control" name="class" required>
 											<option value="">None</option>
 											@foreach($classess as $key => $classValue)
@@ -26,7 +26,7 @@
 										</select>
 									</div>
 									<div class="form-group">
-										<B><label>Subject</label></B><br>
+										<b><label>Subject</label></b><br>
 										<select class="form-control" name="subject" required>
 											<option value="">None</option>
 											@foreach($subjectss as $key => $subjectValue)
@@ -36,7 +36,7 @@
 										
 									</div>
 									<div class="form-group">
-										<B><label>Grade</label></B><br>
+										<b><label>Grade</label></b><br>
 										<select class="form-control" name="gradeType" required>
 											<option value="">None</option>
 											<option value="quizzes">Quiz</option>
@@ -45,7 +45,7 @@
 										</select>
 										
 									</div>
-									<button type="submit" class="btn btn-primary"><B>Search</B></button>
+									<button type="submit" class="btn btn-primary"><b>Search</b></button>
 								</form>
 							</div>
 						</div>

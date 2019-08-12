@@ -7,7 +7,7 @@
 	@include('import/navbarAdmin')
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Upload Sheet</B></h3></div>
+			<div class="panel-heading"><h3><b>Upload Sheet</b></h3></div>
 			<div class="panel-body">
 				<div class="container">
 					<div class="row">
@@ -23,7 +23,7 @@
 								{{ csrf_field() }}
 								<div class="form-group {{ $errors->has('subject') ? 'has-error' : '' }}">
 									<div class="form-group">
-										<B><label>Subject</label></B><br>
+										<b><label>Subject</label></b><br>
 										<select class="form-control" name="subject" required>
 											<option value="">None</option>
 											@foreach($subjectss as $key => $subjectValue)
@@ -35,7 +35,7 @@
 								</div>
 								<div class="form-group {{ $errors->has('class') ? 'has-error' : '' }}">
 									<div class="form-group">
-										<B><label>Class</label></B><br>
+										<b><label>Class</label></b><br>
 										<select class="form-control" name="class" required>
 											<option value="">None</option>
 											@foreach($classess as $key => $classValue)
@@ -45,10 +45,10 @@
 									</div>
 								</div>
 								<div class="form-group {{ $errors->has('sheet') ? 'has-error' : '' }}">
-									<B><label>Upload Sheet</label></B><br>
+									<b><label>Upload Sheet</label></b><br>
 									<input type="file" name="sheet" id="file">
 								</div>
-								<button type="submit" class="btn btn-primary"><B>Submit</B></button>
+								<button type="submit" class="btn btn-primary"><b>Submit</b></button>
 							</form>
 						</div>
 					</div>

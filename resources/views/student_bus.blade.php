@@ -10,7 +10,7 @@
 	
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Assign Seat</B></h3></div>
+			<div class="panel-heading"><h3><b>Assign Seat</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -19,9 +19,9 @@
 								<form action="{{ url('studentBuss') }}" method="post">
 									{{ csrf_field() }}
 									<div class="form-group">
-										<label>Student ID</label></B>
+										<b><label>Student ID</label></b>
 										<input type="textfield" class="form-control" name="student_id"><br>
-										<button type="submit" class="btn btn-primary"><B>Search</B></button>
+										<button type="submit" class="btn btn-primary"><b>Search</b></button>
 									</div>
 								</form>
 								@if(isset($id))
@@ -31,14 +31,14 @@
 									<input type="text" name="name" value="{{$name}}" readonly>
 									<input type="text" name="class" value="{{$class}}" readonly>
 									<div class="form-group">
-										<label>Bus ID</label></B>
+										<b><label>Bus ID</label></b>
 										<select name="bus_id" class="form-control" required>
 											<option value="">None</option>
 											@for($i=0;$i<count($busIds);$i++)
 											<option value="{{$busIds[$i]}}">{{$busIds[$i]}}</option>
 											@endfor
 										</select><br>
-										<button type="submit" class="btn btn-primary"><B>Add</B></button>
+										<button type="submit" class="btn btn-primary"><b>Add</b></button>
 									</div>
 								</form>
 								@endif

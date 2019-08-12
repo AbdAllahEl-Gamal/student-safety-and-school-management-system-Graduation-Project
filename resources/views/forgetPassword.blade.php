@@ -16,7 +16,7 @@
             <div class="panel-body">
               <div class="text-center">
                 <h3><i class="fa fa-lock fa-4x"></i></h3>
-                <h3><B>Forget Password ?</B></h3>
+                <h3><b>Forget Password ?</b></h3>
                 <p>You can reset your password here.</p>
                 <div class="panel-body">
 

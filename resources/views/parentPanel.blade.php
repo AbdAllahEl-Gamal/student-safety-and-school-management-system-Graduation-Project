@@ -43,7 +43,7 @@
  <div class="container">
   <div class="panel panel-info">
     <div class="panel-heading">
-      <h3 class="panel-title"><B>Children</B></h3>
+      <h3 class="panel-title"><b>Children</b></h3>
     </div>
     @foreach($children as $key => $child)
 
@@ -52,7 +52,7 @@
 
         <div class="panel panel-info">
           <div class="panel-heading">
-            <h3 class="panel-title"><B>{{$child['name']}}</B></h3>
+            <h3 class="panel-title"><b>{{$child['name']}}</b></h3>
           </div>
           <div class="panel-body">
             <div class="row">

@@ -11,7 +11,7 @@
 		@if((!isset($sheets))||($sheets=='No files found'))
 		<div class="panel panel-info">
 	        <div class="panel-heading">
-              <h3 class="panel-title"><B>Library</B></h3>
+              <h3 class="panel-title"><b>Library</b></h3>
             </div>
 			<div class="panel-body">
 				<div class="py-5">
@@ -28,7 +28,7 @@
 
 									<div class="col-md-12">
 										<div class="form-group {{ $errors->has('subject') ? 'has-error' : '' }}">
-											<B><label>Subject</label></B><br>
+											<b><label>Subject</label></b><br>
 											<select name="subject" class="form-control">
 												<option value="">None</option>
 												@foreach($subjectss as $key => $subjectValue)
@@ -36,7 +36,7 @@
 												@endforeach
 											</select>
 										</div>
-										<button type="submit" class="btn btn-primary"><B>Submit</B></button>
+										<button type="submit" class="btn btn-primary"><b>Submit</b></button>
 									</div>
 								</form>
 							</div>
@@ -49,7 +49,7 @@
 		@if(isset($sheets)&& $sheets!='No files found')
 		<div class="panel panel-info">
 	        <div class="panel-heading">
-              <h3 class="panel-title"><B>Files</B></h3>
+              <h3 class="panel-title"><b>Files</b></h3>
             </div>
 			<div class="panel-body">
 				<div class="row">

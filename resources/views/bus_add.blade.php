@@ -10,7 +10,7 @@
 	
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Add Bus</B></h3></div>
+			<div class="panel-heading"><h3><b>Add Bus</b></h3></div>
 			<div class="panel-body">
 				<div class="py-5">
 					<div class="container">
@@ -26,23 +26,23 @@
 								<form action="{{ url('insertBus') }}" method="post">
 									{{ csrf_field() }}
 									<div class="form-group">
-										<label>Bus ID</label></B>
+										<b><label>Bus ID</label></b>
 										<input type="textfield" class="form-control" name="busID"><br>
-										<label>Driver:</label></B>
+										<b><label>Driver:</label></b>
 										<select id="driver" name="driver" class="form-control" required>
 											<option value="">None</option>
 											@for($i=0;$i<count($driverIds);$i++)
 											<option value="{{$driverIds[$i]}}">{{$driverNames[$i]}}</option>
 											@endfor
 										</select><br>
-										<label>Supervisor:</label></B>
+										<b><label>Supervisor:</label></b>
 										<select id="supervisor" name="supervisor" class="form-control" required>
 											<option value="">None</option>
 											@for($j=0;$j<count($supervisorIds);$j++)
 											<option value="{{$supervisorIds[$j]}}">{{$supervisorNames[$j]}}</option>
 											@endfor
 										</select><br>
-										<label>Line:</label></B>
+										<b><label>Line:</label></b>
 										<select class="form-control" name="line" required>
 											<option value="">None</option>
 											@foreach($liness as $key => $lineValue)
@@ -51,7 +51,7 @@
 										</select><br>
 										<input type="hidden" name="driverName" id="driverName" value="">
 										<input type="hidden" name="supervisorName" id="supervisorName" value="">
-										<button id="busBtn" type="submit" class="btn btn-primary"><B>Add</B></button>
+										<button id="busBtn" type="submit" class="btn btn-primary"><b>Add</b></button>
 									</div>
 								</form>
 							</div>

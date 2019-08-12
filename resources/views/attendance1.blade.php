@@ -19,16 +19,16 @@
                   {{ csrf_field() }}
                   <div class="row">
                     <div class="col-lg-5">
-                      <B><label>Names</label></B>
+                      <b><label>Names</label></b>
                     </div>
                     <div class="col-lg-5">
-                      <B><label>Status</label></B>
+                      <b><label>Status</label></b>
                     </div>
                   </div> 
                   @for($i=0;$i<count($names);$i++)
                   <div class="row">
                     <div class="col-lg-5">
-                      <B><label>{{$names[$i]}}</label></B>
+                      <b><label>{{$names[$i]}}</label></b>
                     </div>
                     <div class="col-lg-5">
                       <select name="status[]" required>
@@ -41,7 +41,7 @@
                   </div> 
                   @endfor
                   <div class="col-xs-6">
-                    <br><br><button type="submit" class="btn btn-primary"><B>Submit</B></button>
+                    <br><br><button type="submit" class="btn btn-primary"><b>Submit</b></button>
                     <input type="hidden" name="period" value="{{$period}}">
                   </div>
                 </form>

@@ -7,7 +7,7 @@
 	@include('import/navbarAdmin')
 	<div class="container">
 		<div class="panel panel-default">
-			<div class="panel-heading"><h3><B>Student</B></h3></div>
+			<div class="panel-heading"><h3><b>Student</b></h3></div>
 			@if(count($errors)>0)
 			<ul>
 				@foreach($errors->all() as $error)
@@ -19,9 +19,9 @@
 				<div class="col-lg-5"></div>
 				<div class="col-lg-4">
 					<ul class="nav nav-pills">
-						<li class={{Request::is('student')?"active":""}}><a data-toggle="pill" href="#insert"><B>Insert</B></a></li>
-						<li class={{Request::is('studentUpdate')?"active":""}}><a data-toggle="pill" href="#update"><B>Update</B></a></li>
-						<li class={{Request::is('studentDelete')?"active":""}}><a data-toggle="pill" href="#delete"><B>Delete</B></a></li>
+						<li class={{Request::is('student')?"active":""}}><a data-toggle="pill" href="#insert"><b>Insert</b></a></li>
+						<li class={{Request::is('studentUpdate')?"active":""}}><a data-toggle="pill" href="#update"><b>Update</b></a></li>
+						<li class={{Request::is('studentDelete')?"active":""}}><a data-toggle="pill" href="#delete"><b>Delete</b></a></li>
 					</ul>
 				</div>
 				<div class="col-md-4"></div>
@@ -38,29 +38,29 @@
 										<form action="{{ url('insertStudent') }} " method="post" enctype="multipart/form-data" files="true">
 											{{ csrf_field() }}
 											@if(isset($studentId))
-											<B><label>Student Id</label></B> 
+											<b><label>Student Id</label></b> 
 											<input type="text" id="studentId" name="studentId" class="form-control" placeholder="18xxxx" value="{{$studentId}}" readonly>
 											@endif
 											<div class="row">
 												<div class="col-md-4">
 													<div class="form-group {{ $errors->has('firstname') ? 'has-error' : '' }}">
-														<B><label>Student name</label></B> 
+														<b><label>Student name</label></b> 
 														<input type="text" name="studentname" pattern="[A-Za-z]+" class="form-control" placeholder="Student name">
 													</div>
 												</div>
 												<div class="col-md-8">
 													<div class="form-group {{ $errors->has('fullname') ? 'has-error' : '' }}">
-														<B><label>Parent name</label></B>
+														<b><label>Parent name</label></b>
 														<input type="text" name="parentname" pattern="[A-Z\sa-z]+"  class="form-control" placeholder="Parent name">
 													</div>
 												</div>
 											</div>
 											<div class="form-group {{ $errors->has('parentphonenumber') ? 'has-error' : '' }}">
-												<B><label>Parent's phone number</label></B> 
+												<b><label>Parent's phone number</label></b> 
 												<input type="text" name="parentphonenumber" id="Stuparpn" pattern="[0-9]+"  class="form-control" placeholder="+20xxxxxxxxxx">
 											</div>
 											<div class="form-group {{ $errors->has('class') ? 'has-error' : '' }}">
-												<B><label>Gender</label></B><br>
+												<b><label>Gender</label></b><br>
 												<select class="form-control" name="gender">
 													<option value="">None</option>
 													<option value="Female">Female</option>
@@ -68,7 +68,7 @@
 												</select>
 											</div>
 											<div class="form-group {{ $errors->has('class') ? 'has-error' : '' }}">
-												<B><label>Class</label></B><br>
+												<b><label>Class</label></b><br>
 												<select class="form-control" name="class" required>
 													<option value="">None</option>
 													@foreach($classess as $key => $classValue)
@@ -77,16 +77,16 @@
 												</select>
 											</div>
 											<div class="form-group {{ $errors->has('password') ? 'has-error' : '' }}">
-												<B><label>Password</label></B> 
+												<b><label>Password</label></b> 
 												<input type="password" name="password" class="form-control" placeholder="**********">
 											</div>
 											<div class="form-group {{ $errors->has('studentphoto') ? 'has-error' : '' }}">
-												<B><label>Upload student photo</label></B>
+												<b><label>Upload student photo</label></b>
 												<input type="file" name="studentphoto" id="file">
 											</div>
 											<input type="button" id="finger" value="Add Fingerprint">
-											<button type="submit" name="submitBtn" value="submit" class="btn btn-primary"><B>Submit</B></button>
-											<button type="submit" name="submitBtn" value="addNew" class="btn btn-primary"><B>Add new student</B></button>
+											<button type="submit" name="submitBtn" value="submit" class="btn btn-primary"><b>Submit</b></button>
+											<button type="submit" name="submitBtn" value="addNew" class="btn btn-primary"><b>Add new student</b></button>
 										</form>
 									</div>
 								</div>
@@ -100,15 +100,15 @@
 						<div class="panel-body">
 							<form action="{{url('studentUpdate')}}" method="post" enctype="multipart/form-data">
 								{{ csrf_field() }}
-								<B>Student ID:</B> <input type="text" name="studentid">
-								<button type="submit" class="btn btn-primary"><B>Search</B></button>
+								<b>Student ID:</b> <input type="text" name="studentid">
+								<button type="submit" class="btn btn-primary"><b>Search</b></button>
 							</form>
 						</div>
 					</div>
 
 					@if(isset($name))
 					<div class="panel panel-default">
-						<div class="panel-heading"><h3><B>Student Information</B></h3></div> 
+						<div class="panel-heading"><h3><b>Student Information</b></h3></div> 
 						<div class="panel-body">
 							<div class="py-5">
 								<div class="container">
@@ -121,16 +121,16 @@
 												<input type="hidden" name="studentid2" value="{{$studentid}}">
 
 												<div class="form-group">
-													<B><label>Full name</label></B> 
+													<b><label>Full name</label></b> 
 													<input type="text" name="fullname" value="{{$name}}" pattern="[A-Z\sa-z]+" class="form-control">
 												</div>
 
 												<div class="form-group">
-													<B><label>Class</label></B> 
+													<b><label>Class</label></b> 
 													<input type="text" name="class" value="{{$class}}" class="form-control">
 												</div>
-												<button type="submit" class="btn btn-primary"><B>Update</B></button>
-												<button type="submit" formaction="{{url('studentCUpdate1')}}" class="btn btn-primary"><B>Cancel</B></button>
+												<button type="submit" class="btn btn-primary"><b>Update</b></button>
+												<button type="submit" formaction="{{url('studentCUpdate1')}}" class="btn btn-primary"><b>Cancel</b></button>
 											</form>
 											<form action="{{url('studentCUpdate1')}}" method="post" enctype="multipart/form-data">
 												{{ csrf_field() }}
@@ -150,15 +150,15 @@
 						<div class="panel-body">
 							<form action="{{url('studentDelete')}}" method="post" enctype="multipart/form-data">
 								{{ csrf_field() }}
-								<B>Student ID:</B> <input type="text" name="studentid">
-								<button type="submit" class="btn btn-primary"><B>Search</B></button>
+								<b>Student ID:</b> <input type="text" name="studentid">
+								<button type="submit" class="btn btn-primary"><b>Search</b></button>
 							</form>
 						</div>
 					</div>
 
 					@if(isset($namee))
 					<div class="panel panel-default">
-						<div class="panel-heading"><h3><B>Student Information</B></h3></div> 
+						<div class="panel-heading"><h3><b>Student Information</b></h3></div> 
 						<div class="panel-body">
 							<div class="py-5">
 								<div class="container">
@@ -169,17 +169,17 @@
 												<input type="hidden" name="studentid2" value="{{$studentid}}">
 
 												<div class="form-group">
-													<B><label>Full name:</label></B>
-													<B><label>{{$namee}}</label></B>
+													<b><label>Full name:</label></b>
+													<b><label>{{$namee}}</label></b>
 												</div>
 
 												<div class="form-group">
-													<B><label>Class:</label></B> 
-													<B><label>{{$class}}</label></B>
+													<b><label>Class:</label></b> 
+													<b><label>{{$class}}</label></b>
 												</div>
 
-												<button type="submit" class="btn btn-primary"><B>Delete</B></button>
-												<button type="submit" formaction="{{url('studentCDelete1')}}" class="btn btn-primary"><B>Cancel</B></button>
+												<button type="submit" class="btn btn-primary"><b>Delete</b></button>
+												<button type="submit" formaction="{{url('studentCDelete1')}}" class="btn btn-primary"><b>Cancel</b></button>
 											</form>
 											<form action="{{url('studentCDelete1')}}" method="post" enctype="multipart/form-data">
 												{{ csrf_field() }}
